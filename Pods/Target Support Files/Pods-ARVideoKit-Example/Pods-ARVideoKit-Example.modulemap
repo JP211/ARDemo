@@ -1,0 +1,6 @@
+framework module Pods_ARVideoKit_Example {
+  umbrella header "Pods-ARVideoKit-Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
