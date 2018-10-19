@@ -18,7 +18,7 @@ class SKViewController: UIViewController, ARSKViewDelegate, RenderARDelegate, Re
     @IBOutlet var pauseBtn: UIButton!
     
     let recordingQueue = DispatchQueue(label: "recordingThread")
-    let caprturingQueue = DispatchQueue(label: "capturingThread", attributes: .concurrent)
+    let capturingQueue = DispatchQueue(label: "capturingThread", attributes: .concurrent)
     
     var recorder:RecordAR?
 
@@ -152,7 +152,7 @@ extension SKViewController {
         }else if sender.tag == 1 {
             //Live Photo
             if recorder?.status == .readyToRecord {
-                caprturingQueue.async {
+                capturingQueue.async {
                     self.recorder?.livePhoto(export: true) { ready, photo, status, saved in
                         /*
                          if ready {
@@ -281,7 +281,7 @@ extension SKViewController {
 // MARK: - ARSKView Delegate Methods
 extension SKViewController {
     var randoMoji:String {
-        let emojis = ["👾", "🤓", "🔥", "😜", "😇", "🤣", "🤗"]
+        let emojis = ["💕", "🌶", "🍕", "🌅", "🌌", "🌃", "🎆", "🌉", "🌸"]
         return emojis[Int(arc4random_uniform(UInt32(emojis.count)))]
     }
     
