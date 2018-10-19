@@ -19,19 +19,8 @@
 		FBDCC60D1FABFE6A00E3184D /* SKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDCC60C1FABFE6A00E3184D /* SKViewController.swift */; };
 		FBDCC6401FAC2CD900E3184D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDCC63F1FAC2CD900E3184D /* art.scnassets */; };
 		FBE134BA1FAAD3DD00BEC469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE134B91FAAD3DD00BEC469 /* AppDelegate.swift */; };
-		FBE134BC1FAAD3DD00BEC469 /* SCNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE134BB1FAAD3DD00BEC469 /* SCNViewController.swift */; };
 		FBE134C11FAAD3DD00BEC469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE134C01FAAD3DD00BEC469 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FB36BDAE20086BB000002808 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB36BDAA20086BB000002808 /* ARVideoKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FBD604DA1FA969DD00EC9804;
-			remoteInfo = ARVideoKit;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FB2E37801FAFD5EB0035B8D6 /* Embed Frameworks */ = {
@@ -55,7 +44,6 @@
 		EB1684AB21799C29003F0CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB1684AD21799C29003F0CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB2E368B1FAE2A510035B8D6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FB36BDAA20086BB000002808 /* ARVideoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ARVideoKit.xcodeproj; path = ../../ARVideoKit.xcodeproj; sourceTree = "<group>"; };
 		FB9B5D2D1FC49E3E005DDD60 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FBDCC5E51FABDFC500E3184D /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
 		FBDCC5E61FABDFC500E3184D /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
@@ -63,7 +51,6 @@
 		FBDCC63F1FAC2CD900E3184D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		FBE134B61FAAD3DD00BEC469 /* ARVideoKit-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARVideoKit-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE134B91FAAD3DD00BEC469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBE134BB1FAAD3DD00BEC469 /* SCNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNViewController.swift; sourceTree = "<group>"; };
 		FBE134C01FAAD3DD00BEC469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBE134C51FAAD3DD00BEC469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,14 +85,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FB36BDAB20086BB000002808 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FB36BDAF20086BB000002808 /* ARVideoKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		FBA0AA0B1FAD9E13006C481B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				FB9B5D2D1FC49E3E005DDD60 /* MainViewController.swift */,
-				FBE134BB1FAAD3DD00BEC469 /* SCNViewController.swift */,
 				FBDCC60C1FABFE6A00E3184D /* SKViewController.swift */,
 			);
 			path = "View Controllers";
@@ -165,7 +143,6 @@
 			children = (
 				EB16849F217995DA003F0CEA /* ARVideoKit.framework */,
 				FB2E368B1FAE2A510035B8D6 /* LICENSE */,
-				FB36BDAA20086BB000002808 /* ARVideoKit.xcodeproj */,
 				FBE134B81FAAD3DD00BEC469 /* ARVideoKit-Example */,
 				FBE134B71FAAD3DD00BEC469 /* Products */,
 				FA217AAD00642E760E81890E /* Pods */,
@@ -243,28 +220,12 @@
 			mainGroup = FBE134AD1FAAD3DD00BEC469;
 			productRefGroup = FBE134B71FAAD3DD00BEC469 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FB36BDAB20086BB000002808 /* Products */;
-					ProjectRef = FB36BDAA20086BB000002808 /* ARVideoKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FBE134B51FAAD3DD00BEC469 /* ARVideoKit-Example */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FB36BDAF20086BB000002808 /* ARVideoKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ARVideoKit.framework;
-			remoteRef = FB36BDAE20086BB000002808 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FBE134B41FAAD3DD00BEC469 /* Resources */ = {
@@ -334,7 +295,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE134BC1FAAD3DD00BEC469 /* SCNViewController.swift in Sources */,
 				FBE134BA1FAAD3DD00BEC469 /* AppDelegate.swift in Sources */,
 				FBDCC60D1FABFE6A00E3184D /* SKViewController.swift in Sources */,
 				FBDCC5E81FABDFC600E3184D /* Scene.swift in Sources */,
